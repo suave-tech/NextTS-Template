@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+            @apply inline-block rounded-md text-center transition duration-150;
+          }
+
+          .btn-base {
+            @apply text-lg font-semibold py-2 px-4;
+          }
+
+          .btn-xl {
+            @apply font-extrabold text-xl py-4 px-6;
+          }
+
+          .btn-primary {
+            @apply text-white bg-orange-400;
+          }
+
+          .btn-primary:hover {
+            @apply bg-orange-500;
+          }
+
+          .btn-secondary {
+            @apply text-orange-400 border border-orange-400;
+          }
+
+          .btn-secondary:hover {
+            @apply border-orange-500;
+          }
+
+          .btn-transparent {
+            @apply text-gray-800 !px-2;
+          }
+
+          .btn-transparent:hover {
+            @apply text-gray-600;
+          }
+
+          .navbar :global(li:not(:first-child)) {
+          @apply mt-0;
+        }
+
+        .navbar :global(li:not(:last-child)) {
+          @apply mr-5;
+        }
